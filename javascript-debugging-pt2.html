@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Javascript Debugging Part 2</title>
+</head>
+
+<body>
+
+<p>Using only your browser, make the answer show up below</p>
+
+<p>What is my name?</p>
+
+<p id="value"></p>
+
+<script type="text/javascript">
+    function Person(name) {
+        this.name = name;
+    }
+
+    Person.prototype.getName = function() {
+        return name;
+    };
+
+    var person = new Person("Bob");
+
+    document.getElementById("value").innerHTML = person.getName();
+</script>
+
+</body>
+</html>

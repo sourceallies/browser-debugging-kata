@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Javascript Debugging</title>
+</head>
+
+<body>
+
+<p>Enter your name and click submit. The page should say hi. Why isn't it?</p>
+
+<input id="myInput" type="text" placeholder="Name"/>
+<button id="myButton" type="button">Submit</button>
+
+<script type="text/javascript">
+    function doAlert(name) {
+        alert("Hello " + name);
+    }
+
+    document.getElementById("myButton").addEventListener("click", function(){
+        var input = document.getElementById("myInput");
+        doIt(input.getAttribute("value"));
+    });
+
+</script>
+
+</body>
+</html>
